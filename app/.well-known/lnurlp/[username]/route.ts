@@ -19,7 +19,7 @@ export async function GET(
     callback: `${getBaseUrl()}/.well-known/lnurlp/${params.username}/callback`,
     minSendable: 1000,
     maxSendable: 10000000000,
-    metadata: `[["text/identifier","${params.username}@${domain}"],["text/plain","Sats for Alby Jim user ${params.username}"]]`,
+    metadata: `[["text/identifier","${params.username}@${domain}"],["text/plain","Sats for lnwallet.app user ${params.username}"]]`,
     ...(NOSTR_NIP57_PRIVATE_KEY
       ? {
           allowsNostr: true,
