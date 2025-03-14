@@ -19,7 +19,7 @@ export type Wallet = {
   valueTag: string;
 };
 
-const APP_NAME_PREFIX = process.env.APP_NAME_PREFIX || "Alby Jim ";
+const APP_NAME_PREFIX = process.env.APP_NAME_PREFIX || "lnwallet.app ";
 
 let nodePubkey: string;
 
