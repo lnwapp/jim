@@ -3,9 +3,9 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Uncle Jim",
+  title: "lnwallet.app",
   description:
-    "An Uncle Jim service that gives out instant wallets that can be used in any NWC-powered app such as Damus, Amethyst, Alby Browser Extension and Alby Account",
+    "A bitcoin lightning wallet service that gives out instant wallets that can be used in any NWC-powered app such as Damus, Amethyst, Alby Browser Extension and Alby Account",
 };
 
 export default function RootLayout({
