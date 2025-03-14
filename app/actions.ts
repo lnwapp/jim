@@ -74,7 +74,7 @@ export async function createWallet(
       method: "POST",
       body: JSON.stringify({
         name:
-          APP_NAME_PREFIX + Math.floor(Date.now() / 1000),
+          APP_NAME_PREFIX + Math.floor(Date.now() / 1000) + "-" + username,
         pubkey: "",
         budgetRenewal: "monthly",
         maxAmount: 0,
