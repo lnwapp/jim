@@ -73,8 +73,6 @@ export async function createWallet(
     const newAppResponse = await fetch(new URL("/api/apps", getAlbyHubUrl()), {
       method: "POST",
       body: JSON.stringify({
-        name:
-// doesn't work          APP_NAME_PREFIX + request?.username || Math.floor(Date.now() / 1000),
         name: APP_NAME_PREFIX + Math.floor(Date.now() / 1000),
         pubkey: "",
         budgetRenewal: "monthly",
