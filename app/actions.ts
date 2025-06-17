@@ -19,7 +19,7 @@ export type Wallet = {
   valueTag: string;
 };
 
-const APP_NAME_PREFIX = process.env.APP_NAME_PREFIX || "lnwallet.app ";
+const APP_NAME_PREFIX = process.env.APP_NAME_PREFIX || "Alby Jim ";
 
 let nodePubkey: string;
 
@@ -74,7 +74,7 @@ export async function createWallet(
       method: "POST",
       body: JSON.stringify({
         name:
-          APP_NAME_PREFIX + Math.floor(Date.now() / 1000),
+          APP_NAME_PREFIX + request?.username || Math.floor(Date.now() / 1000),
         pubkey: "",
         budgetRenewal: "monthly",
         maxAmount: 0,
