@@ -52,6 +52,17 @@ export async function findWalletConnection(
   });
 }
 
+export async function markConnectionSecretSubscribed(id: string) {
+  return prisma.connectionSecret.update({
+    where: {
+      id,
+    },
+    data: {
+      subscribed: true,
+    },
+  });
+}
+
 export async function getAllConnections() {
   return prisma.connectionSecret.findMany();
 }
