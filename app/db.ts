@@ -58,7 +58,7 @@ export async function markConnectionSecretSubscribed(id: string) {
       id,
     },
     data: {
-      subscribed: true,
+      subscribed: true
     },
   });
 }
